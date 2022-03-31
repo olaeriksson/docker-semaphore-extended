@@ -1,7 +1,7 @@
 FROM ansiblesemaphore/semaphore:v2.8.31
 
 USER root
-RUN apk add --no-cache -U rsync
+RUN apk add --no-cache -U bash rsync rclone samba-client
 
 USER 1001
 

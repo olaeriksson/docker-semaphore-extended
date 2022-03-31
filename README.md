@@ -5,4 +5,7 @@ It adds packages required by some roles from Ansible Galaxy.
 
 Currently adding the following packages to the standard image:
 
+	* bash
 	* rsync
+	* rclone
+	* samba-client

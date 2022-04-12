@@ -1,4 +1,4 @@
-FROM ansiblesemaphore/semaphore:v2.8.31
+FROM ansiblesemaphore/semaphore:v2.8.53
 
 USER root
 RUN apk add --no-cache -U bash rsync rclone samba-client

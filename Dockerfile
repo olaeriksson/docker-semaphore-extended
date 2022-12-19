@@ -1,4 +1,4 @@
-FROM ansiblesemaphore/semaphore:v2.8.53
+FROM semaphoreui/semaphore:v2.8.77
 
 # Settings
 ENV ILOREST_VERSION=3.5.1.0-8

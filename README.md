@@ -11,3 +11,4 @@ Currently adding the following packages to the standard image:
 	* rclone
 	* samba-client
 	* ilorest
+        * py3-lxml

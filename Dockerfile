@@ -4,7 +4,7 @@ FROM semaphoreui/semaphore:v2.8.77
 ENV ILOREST_VERSION=3.5.1.0-8
 
 USER root
-RUN apk add --no-cache -U bash rsync rclone samba-client rpm
+RUN apk add --no-cache -U bash rsync rclone samba-client rpm py3-lxml
 
 # Install ilorest manually
 RUN \

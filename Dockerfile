@@ -1,8 +1,10 @@
-FROM semaphoreui/semaphore:v2.8.77
+FROM semaphoreui/semaphore:v2.8.81
 
 # Settings
 ENV ILOREST_VERSION=3.5.1.0-8
 
+
+# Add packages
 USER root
 RUN apk add --no-cache -U bash rsync rclone samba-client rpm py3-lxml
 
@@ -17,6 +19,8 @@ RUN \
 	cp -Rp /tmp/ilorest/etc/ilorest /etc/ && \
 	rm -rf /tmp/ilorest
 
-USER 1001
+# Add entrypoint script
+COPY entrypoint.sh /
 
-CMD ["/usr/local/bin/semaphore-wrapper", "/usr/local/bin/semaphore", "--config", "/etc/semaphore/config.json", "service"]
+# Go Go Go
+CMD ["/bin/sh", "/entrypoint.sh"]

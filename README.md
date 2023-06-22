@@ -13,6 +13,7 @@ Currently adding the following packages to the standard image:
 	* samba-client
 	* ilorest
 	* py3-lxml
+	* py3-dnspython
 
 The following enhancements are added:
 	* Enable syslog to remote host

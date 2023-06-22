@@ -1,4 +1,4 @@
-FROM semaphoreui/semaphore:v2.8.81
+FROM semaphoreui/semaphore:v2.8.90
 
 # Settings
 ENV ILOREST_VERSION=3.5.1.0-8
@@ -6,7 +6,7 @@ ENV ILOREST_VERSION=3.5.1.0-8
 
 # Add packages
 USER root
-RUN apk add --no-cache -U bash rsync rclone samba-client rpm py3-lxml
+RUN apk add --no-cache -U bash rsync rclone samba-client rpm py3-lxml py3-dnspython
 
 # Install ilorest manually
 RUN \
